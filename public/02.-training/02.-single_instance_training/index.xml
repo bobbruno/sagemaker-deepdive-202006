@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Prepare your training scripts on SageMaker Deep Dive</title>
+    <link>/02.-training/02.-single_instance_training.html</link>
+    <description>Recent content in Prepare your training scripts on SageMaker Deep Dive</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="/02.-training/02.-single_instance_training/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Problem statement</title>
+      <link>/02.-training/02.-single_instance_training/problem_setup.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/02.-training/02.-single_instance_training/problem_setup.html</guid>
+      <description>Converting a single CPU/GPU training script to a multi-node/distributed compatible training script Frameworks: This workshop currently uses TensorFlow 1.14, Keras and Horovod 0.18.
+Dataset: The CIFAR-10 consists of 60,000 32x32 images belonging to 10 different classes (6,000 images per class). CIFAR-10 dataset includes:
+ 40,000 images for training 10,000 images for validation 10,000 images for test  Here are the classes in the dataset, as well as 10 random images from each: Note: Although the dataset is small and this is a simpler problem, all the steps we&amp;rsquo;ll take can easily be applied to large datasets that don&amp;rsquo;t fit in memory.</description>
+    </item>
+    
+    <item>
+      <title>Prepare training dataset</title>
+      <link>/02.-training/02.-single_instance_training/prepare_dataset.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/02.-training/02.-single_instance_training/prepare_dataset.html</guid>
+      <description>Download the CIFAR10 dataset and upload it to Amazon S3 On a terminal window in JupyterLab client, navigate to the notebook directory
+cd ~/SageMaker/sagemaker-workshop-202006/notebooks/ Activate the TensorFlow conda environment
+source activate tensorflow_p36 Before running the command above, you may have to run &amp;ldquo;. /home/ec2-user/anaconda3/etc/profile.d/conda.sh&amp;rdquo;.
+ Download CIFAR10 dataset and convert it to TFRecords format
+python generate_cifar10_tfrecords.py --data-dir dataset Confirm that the dataset was downloaded successfully. Run:
+sudo yum install tree -y tree dataset You should see the following output</description>
+    </item>
+    
+    <item>
+      <title>Getting familiar with a single instance training script</title>
+      <link>/02.-training/02.-single_instance_training/single_instance_script.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/02.-training/02.-single_instance_training/single_instance_script.html</guid>
+      <description>Single CPU/GPU training on the local instance 
+In this section you&amp;rsquo;ll get familiar with the training script we&amp;rsquo;ll be converting for distributed training in the next notebook.
+Open cifar10-single-instance.ipynb and run through the cells. The following notebook is located at: sagemaker-workshop-202006 &amp;gt; labs &amp;gt; 01. Training &amp;gt; 01. Distributed Training &amp;gt; part-1-horovod
+Stop: Do this section on JupyterLab. Below is a copy of the jupyter notebook for reference.  Below is a copy of the Jupyter notebook cifar10-single-instance.</description>
+    </item>
+    
+    <item>
+      <title>Converting the script for Horovod API distributed training</title>
+      <link>/02.-training/02.-single_instance_training/distributed_training_script.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/02.-training/02.-single_instance_training/distributed_training_script.html</guid>
+      <description>Exercise 1: Convert training script to use horovod 
+In this section you&amp;rsquo;ll update the training script with horovod API for run distributed training.
+Open cifar10-distributed.ipynb and run through the cells. The following notebook is located at: sagemaker-workshop-202006 &amp;gt; labs &amp;gt; 01. Training &amp;gt; 01. Distributed Training &amp;gt; part-1-horovod
+Stop: Do this section on JupyterLab. Below is a copy of the jupyter notebook for reference. Open cifar10-distributed.ipynb and run these cells.</description>
+    </item>
+    
+  </channel>
+</rss>

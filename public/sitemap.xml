@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2019-10-28T21:11:22-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/02.-training/03.-sagemaker_dist_training/workflow.html</loc>
+    <lastmod>2019-10-28T12:59:15-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/01.-intro/01.-challenges.html</loc>
+    <lastmod>2019-10-28T20:56:39-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/02.-training/03.-sagemaker_dist_training/training_scrip_updates.html</loc>
+    <lastmod>2019-10-28T13:42:13-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/01.-intro/02.-addressing_challenges.html</loc>
+    <lastmod>2019-10-28T21:02:29-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/02.-training/03.-sagemaker_dist_training/sagemaker_training.html</loc>
+    <lastmod>2019-10-28T13:17:44-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/01.-intro/03.-addressing_challenges-1.html</loc>
+    <lastmod>2019-10-28T21:07:47-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/01.-intro/04.-horovod.html</loc>
+    <lastmod>2019-10-28T21:11:22-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/01.-intro.html</loc>
+    <lastmod>2019-10-28T21:11:22-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/02.-training/01.-setup.html</loc>
+    <lastmod>2019-10-28T00:14:06-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/02.-training/01.-setup/sm_jupyter_instance.html</loc>
+    <lastmod>2019-10-27T22:39:43-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/05.-deployment/01.-inference-pipelines.html</loc>
+  </url>
+  
+  <url>
+    <loc>/02.-training/02.-single_instance_training/problem_setup.html</loc>
+  </url>
+  
+  <url>
+    <loc>/04.-ml-pipelines/01.-processing-jobs.html</loc>
+  </url>
+  
+  <url>
+    <loc>/04.-ml-pipelines/01.-processing-jobs/01.-preprocess_spark.html</loc>
+  </url>
+  
+  <url>
+    <loc>/03.-other-training/01.-spot.html</loc>
+  </url>
+  
+  <url>
+    <loc>/02.-training/01.-setup/download_workshop.html</loc>
+    <lastmod>2019-10-28T00:14:06-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/05.-deployment/02.-elastic-inference.html</loc>
+  </url>
+  
+  <url>
+    <loc>/02.-training/02.-single_instance_training/prepare_dataset.html</loc>
+  </url>
+  
+  <url>
+    <loc>/02.-training/02.-single_instance_training.html</loc>
+  </url>
+  
+  <url>
+    <loc>/04.-ml-pipelines/01.-processing-jobs/02.-preprocess_dask.html</loc>
+  </url>
+  
+  <url>
+    <loc>/03.-other-training/02.-debugger.html</loc>
+  </url>
+  
+  <url>
+    <loc>/04.-ml-pipelines/02.-step-functions.html</loc>
+  </url>
+  
+  <url>
+    <loc>/02.-training.html</loc>
+    <lastmod>2019-10-28T13:54:27-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/02.-training/03.-sagemaker_dist_training.html</loc>
+    <lastmod>2019-10-28T13:54:27-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/02.-training/02.-single_instance_training/single_instance_script.html</loc>
+  </url>
+  
+  <url>
+    <loc>/03.-other-training.html</loc>
+  </url>
+  
+  <url>
+    <loc>/03.-other-training/03.-experiments.html</loc>
+  </url>
+  
+  <url>
+    <loc>/03.-other-training/04.-hpo.html</loc>
+  </url>
+  
+  <url>
+    <loc>/02.-training/02.-single_instance_training/distributed_training_script.html</loc>
+  </url>
+  
+  <url>
+    <loc>/04.-ml-pipelines.html</loc>
+  </url>
+  
+  <url>
+    <loc>/05.-deployment.html</loc>
+  </url>
+  
+  <url>
+    <loc>/02.-training/03.-sagemaker_dist_training/monitoring_results.html</loc>
+    <lastmod>2019-10-28T13:54:27-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories.html</loc>
+  </url>
+  
+  <url>
+    <loc>/tags.html</loc>
+  </url>
+  
+</urlset>

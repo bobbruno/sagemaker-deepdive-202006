@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Distributed Training with Amazon Sagemaker on SageMaker Deep Dive</title>
+    <link>/02.-training/03.-sagemaker_dist_training.html</link>
+    <description>Recent content in Distributed Training with Amazon Sagemaker on SageMaker Deep Dive</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 28 Oct 2019 13:54:27 -0700</lastBuildDate>
+    
+	<atom:link href="/02.-training/03.-sagemaker_dist_training/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Workflow</title>
+      <link>/02.-training/03.-sagemaker_dist_training/workflow.html</link>
+      <pubDate>Mon, 28 Oct 2019 12:59:15 -0700</pubDate>
+      
+      <guid>/02.-training/03.-sagemaker_dist_training/workflow.html</guid>
+      <description>Navigate to sagemaker-workshop-202006 &amp;gt; labs &amp;gt; 01. Training &amp;gt; 01. Distributed Training &amp;gt; part-2-sagemaker You should see the following files:
+part-2-sagemaker/ ├── cifar10-sagemaker-distributed.ipynb └── code ├── cifar10-multi-gpu-horovod-sagemaker.py └── model_def.py    Files/directories Description     cifar10-sagemaker-distributed.ipynb This jupyter notebook contains code to define and kick off a SageMaker training job   code This directory contains the training scrip and other training script dependencies    SageMaker is a fully-managed service, which means when you kick off a training job using the SageMaker SDK in the cifar10-sagemaker-distributed.</description>
+    </item>
+    
+    <item>
+      <title>Updates required to run on SageMaker</title>
+      <link>/02.-training/03.-sagemaker_dist_training/training_scrip_updates.html</link>
+      <pubDate>Mon, 28 Oct 2019 13:42:13 -0700</pubDate>
+      
+      <guid>/02.-training/03.-sagemaker_dist_training/training_scrip_updates.html</guid>
+      <description>There are few minor changes required to run a training script on Amazon Sagemaker
+SageMaker hyperparameters  SageMaker passes hyperparameters to the training scripts as commandline arguments. Your script must be able to parse these arguments.  SageMaker environment variables  SageMaker makes several environment variables available inside the container that a training script can take advantage of for finding location of the training dataset, number of GPU in the instance, dataset channels and others.</description>
+    </item>
+    
+    <item>
+      <title>SageMaker distributed training</title>
+      <link>/02.-training/03.-sagemaker_dist_training/sagemaker_training.html</link>
+      <pubDate>Mon, 28 Oct 2019 13:17:44 -0700</pubDate>
+      
+      <guid>/02.-training/03.-sagemaker_dist_training/sagemaker_training.html</guid>
+      <description>Open cifar10-sagemaker-distributed.ipynb and run through the cells. The following notebook is located at: distributed-training-workshop &amp;gt; notebooks &amp;gt; part-2-sagemaker &amp;gt; cifar10-sagemaker-distributed.ipynb
+Stop: Do this section on JupyterLab. Below is a copy of the jupyter notebook for reference.  Distributed training with Amazon SageMaker In this notebook we use the SageMaker Python SDK to setup and run a distributed training job. SageMaker makes it easy to train models across a cluster containing a large number of machines, without having to explicitly manage those resources.</description>
+    </item>
+    
+    <item>
+      <title>Monitoring training progress</title>
+      <link>/02.-training/03.-sagemaker_dist_training/monitoring_results.html</link>
+      <pubDate>Mon, 28 Oct 2019 13:54:27 -0700</pubDate>
+      
+      <guid>/02.-training/03.-sagemaker_dist_training/monitoring_results.html</guid>
+      <description>Monitoring training progress using tensorboard The cifar10-sagemaker-distributed.ipynb notebook will automatically start a tensorboard server for you when your run the following cell. Tensorboard is running locally on your Jupyter notebook instance, but reading the events from the Amazon S3 bucket we used to save the events using the keras callback.
+!S3_REGION=us-east-1 tensorboard --logdir s3://{bucket_name}/tensorboard_logs/ Navigate to https://adidas202006.notebook.us-east-1.sagemaker.aws/proxy/6006/
+Replace adidas202006 with the name of your Jupyter notebook instance. Monitoring training job status on the AWS SageMaker console Navigate to AWS management console &amp;gt; SageMaker console to see a full list of training jobs and their status.</description>
+    </item>
+    
+  </channel>
+</rss>

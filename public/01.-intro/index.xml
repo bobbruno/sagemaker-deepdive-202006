@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction to Distributed Training on SageMaker Deep Dive</title>
+    <link>/01.-intro.html</link>
+    <description>Recent content in Introduction to Distributed Training on SageMaker Deep Dive</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 28 Oct 2019 21:11:22 -0700</lastBuildDate>
+    
+	<atom:link href="/01.-intro/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Challenges with scaling machine learning</title>
+      <link>/01.-intro/01.-challenges.html</link>
+      <pubDate>Mon, 28 Oct 2019 20:56:39 -0700</pubDate>
+      
+      <guid>/01.-intro/01.-challenges.html</guid>
+      <description>There are two key challenges associated with scaling machine learning computation.
+ Development setup on a single computer or instance doesn&amp;rsquo;t translate well when deploying to cluster Managing infrastructure is challenging for machine learning researchers, data scientists and developer without IT/ops background  </description>
+    </item>
+    
+    <item>
+      <title>Addressing scaling challenges - software dependencies</title>
+      <link>/01.-intro/02.-addressing_challenges.html</link>
+      <pubDate>Mon, 28 Oct 2019 21:02:29 -0700</pubDate>
+      
+      <guid>/01.-intro/02.-addressing_challenges.html</guid>
+      <description> Software dependencies Containers provide consistent, lightweight and portable environment that includes not just the training code but also dependencies and configuration. Simply package up your code and push it to a container registry. The container image can then be pulled into a cluster and run at scale. </description>
+    </item>
+    
+    <item>
+      <title>Addressing scaling challenges - Infrastructure management</title>
+      <link>/01.-intro/03.-addressing_challenges-1.html</link>
+      <pubDate>Mon, 28 Oct 2019 21:07:47 -0700</pubDate>
+      
+      <guid>/01.-intro/03.-addressing_challenges-1.html</guid>
+      <description> Infrastructure management </description>
+    </item>
+    
+    <item>
+      <title>Distributed training approaches</title>
+      <link>/01.-intro/04.-horovod.html</link>
+      <pubDate>Mon, 28 Oct 2019 21:11:22 -0700</pubDate>
+      
+      <guid>/01.-intro/04.-horovod.html</guid>
+      <description>Horovod Horovod documentation
+Horovod is based on the MPI concepts: size, rank, local rank, allreduce, allgather, and broadcast.
+ Library for distributed deep learning with support for multiple frameworks including TensorFlow Separates infrastructure from ML engineers Uses ring-allreduce and uses Message Passing Interface (MPI) popular in the HPC community Infrastructure services such as Amazon SageMaker and Amazon EKS provides container and MPI environment   Forward pass on each device Backward pass compute gradients ”All reduce” (average and broadcast) gradients across devices Update local variables with “all reduced” gradients  Horovod will run the same copy of the script on all hosts/servers/nodes/instances</description>
+    </item>
+    
+  </channel>
+</rss>

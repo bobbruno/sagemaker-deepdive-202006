@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Processing Jobs on SageMaker Deep Dive</title>
+    <link>/04.-ml-pipelines/01.-processing-jobs.html</link>
+    <description>Recent content in Processing Jobs on SageMaker Deep Dive</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="/04.-ml-pipelines/01.-processing-jobs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Processing with Spark</title>
+      <link>/04.-ml-pipelines/01.-processing-jobs/01.-preprocess_spark.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/04.-ml-pipelines/01.-processing-jobs/01.-preprocess_spark.html</guid>
+      <description>In the first example we&amp;rsquo;ll see how to create a docker image containing Spark, start a Spark cluster based on it (and managed by SageMaker), run the transformation script (generated inside the notebook itself) and use the results to train an XGBoost model. The provided code does all the Spark cluster configuration, and it can be reused by any job you may need.
+Configuring a Spark cluster is an advanced and specialized skill.</description>
+    </item>
+    
+    <item>
+      <title>Processing with Dask</title>
+      <link>/04.-ml-pipelines/01.-processing-jobs/02.-preprocess_dask.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/04.-ml-pipelines/01.-processing-jobs/02.-preprocess_dask.html</guid>
+      <description>The second example shows how to create a docker image containing Dask and run a transformation script using it on a cluster managed by SageMaker. The results will be used to train an XGBoost model. The provided code does all the configuration, and it can be reused by any job you may need.
+Dask is a sophisticated processing framework which, among other interfaces, provides functionality similar to Pandas. The script provided uses a combination of Pandas and Dask processing, but any Dask interface is possible.</description>
+    </item>
+    
+  </channel>
+</rss>

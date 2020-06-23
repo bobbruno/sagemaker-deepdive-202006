@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Training Setup on SageMaker Deep Dive</title>
+    <link>/02.-training/01.-setup.html</link>
+    <description>Recent content in Training Setup on SageMaker Deep Dive</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 28 Oct 2019 00:14:06 -0700</lastBuildDate>
+    
+	<atom:link href="/02.-training/01.-setup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Launch a SageMaker notebook instance</title>
+      <link>/02.-training/01.-setup/sm_jupyter_instance.html</link>
+      <pubDate>Sun, 27 Oct 2019 22:39:43 -0700</pubDate>
+      
+      <guid>/02.-training/01.-setup/sm_jupyter_instance.html</guid>
+      <description>Note: In this workshop, we&amp;rsquo;ll be using an Amazon SageMaker notebook instance for simplicity and convenience. You can use any local client to perform steps detailed in this and subsequent sections. You&amp;rsquo;ll just need to make sure you have the right privileges to access AWS services such as SageMaker, S3, ECR and others from your client. You&amp;rsquo;ll also need to install AWS Command Line Interface (AWS CLI), python, boto3 and SageMaker SDK.</description>
+    </item>
+    
+    <item>
+      <title>Download the workshop content</title>
+      <link>/02.-training/01.-setup/download_workshop.html</link>
+      <pubDate>Mon, 28 Oct 2019 00:14:06 -0700</pubDate>
+      
+      <guid>/02.-training/01.-setup/download_workshop.html</guid>
+      <description>Launch JupyterLab client and clone the workshop repository  Your notebook instance should now be ready. Click JupyterLab to launch your client.  Click File &amp;gt; New &amp;gt; Terminal to launch terminal in your JupyterLab instance.  Download the workshop code and notebooks. Enter bash (optional), change directory to ~/SageMaker, clone the repository
+bash cd ~/SageMaker git clone https://github.com/bobbruno/sagemaker-workshop-202006.git Fix the link above to a repo of my creation</description>
+    </item>
+    
+  </channel>
+</rss>

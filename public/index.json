@@ -1,0 +1,132 @@
+[
+	{	"pageTitle": "Index",
+		"relativePagePath": "/en/"
+	},
+	{
+		"pageTitle": "Introduction to Distributed Training",
+		"relativePagePath": "/01.-intro.html"
+	},
+	{
+		"pageTitle": "Challenges with scaling machine learning",
+		"relativePagePath": "/01.-intro/01.-challenges.html"
+	},
+	{
+		"pageTitle": "Addressing scaling challenges - software dependencies",
+		"relativePagePath": "/01.-intro/02.-addressing_challenges.html"
+	},
+	{
+		"pageTitle": "Addressing scaling challenges - Infrastructure management",
+		"relativePagePath": "/01.-intro/03.-addressing_challenges-1.html"
+	},
+	{
+		"pageTitle": "Distributed training approaches",
+		"relativePagePath": "/01.-intro/04.-horovod.html"
+	},
+	{
+		"pageTitle": "Distributed Training on SageMaker",
+		"relativePagePath": "/02.-training.html"
+	},
+	{
+		"pageTitle": "Training Setup",
+		"relativePagePath": "/02.-training/01.-setup.html"
+	},
+	{
+		"pageTitle": "Launch a SageMaker notebook instance",
+		"relativePagePath": "/02.-training/01.-setup/sm_jupyter_instance.html"
+	},
+	{
+		"pageTitle": "Download the workshop content",
+		"relativePagePath": "/02.-training/01.-setup/download_workshop.html"
+	},
+	{
+		"pageTitle": "Prepare your training scripts",
+		"relativePagePath": "/02.-training/02.-single_instance_training.html"
+	},
+	{
+		"pageTitle": "Problem statement",
+		"relativePagePath": "/02.-training/02.-single_instance_training/problem_setup.html"
+	},
+	{
+		"pageTitle": "Prepare training dataset",
+		"relativePagePath": "/02.-training/02.-single_instance_training/prepare_dataset.html"
+	},
+	{
+		"pageTitle": "Getting familiar with a single instance training script",
+		"relativePagePath": "/02.-training/02.-single_instance_training/single_instance_script.html"
+	},
+	{
+		"pageTitle": "Converting the script for Horovod API distributed training",
+		"relativePagePath": "/02.-training/02.-single_instance_training/distributed_training_script.html"
+	},
+	{
+		"pageTitle": "Distributed Training with Amazon Sagemaker",
+		"relativePagePath": "/02.-training/03.-sagemaker_dist_training.html"
+	},
+	{
+		"pageTitle": "Workflow",
+		"relativePagePath": "/02.-training/03.-sagemaker_dist_training/workflow.html"
+	},
+	{
+		"pageTitle": "Updates required to run on SageMaker",
+		"relativePagePath": "/02.-training/03.-sagemaker_dist_training/training_scrip_updates.html"
+	},
+	{
+		"pageTitle": "SageMaker distributed training",
+		"relativePagePath": "/02.-training/03.-sagemaker_dist_training/sagemaker_training.html"
+	},
+	{
+		"pageTitle": "Monitoring training progress",
+		"relativePagePath": "/02.-training/03.-sagemaker_dist_training/monitoring_results.html"
+	},
+	{
+		"pageTitle": "Other Training Topics",
+		"relativePagePath": "/03.-other-training.html"
+	},
+	{
+		"pageTitle": "Spot training lab",
+		"relativePagePath": "/03.-other-training/01.-spot.html"
+	},
+	{
+		"pageTitle": "SageMaker Debugger lab",
+		"relativePagePath": "/03.-other-training/02.-debugger.html"
+	},
+	{
+		"pageTitle": "SageMaker Experiments lab",
+		"relativePagePath": "/03.-other-training/03.-experiments.html"
+	},
+	{
+		"pageTitle": "Automatic Model Tuning",
+		"relativePagePath": "/03.-other-training/04.-hpo.html"
+	},
+	{
+		"pageTitle": "Machine Learning Pipelines",
+		"relativePagePath": "/04.-ml-pipelines.html"
+	},
+	{
+		"pageTitle": "Processing Jobs",
+		"relativePagePath": "/04.-ml-pipelines/01.-processing-jobs.html"
+	},
+	{
+		"pageTitle": "Processing with Spark",
+		"relativePagePath": "/04.-ml-pipelines/01.-processing-jobs/01.-preprocess_spark.html"
+	},
+	{
+		"pageTitle": "Processing with Dask",
+		"relativePagePath": "/04.-ml-pipelines/01.-processing-jobs/02.-preprocess_dask.html"
+	},
+	{
+		"pageTitle": "Step Funcions and the DS SDK",
+		"relativePagePath": "/04.-ml-pipelines/02.-step-functions.html"
+	},
+	{
+		"pageTitle": "Deployment",
+		"relativePagePath": "/05.-deployment.html"
+	},
+	{
+		"pageTitle": "Inference Pipelines and Batch Transformations lab",
+		"relativePagePath": "/05.-deployment/01.-inference-pipelines.html"
+	},
+	{
+		"pageTitle": "Elastic Inference Lab",
+		"relativePagePath": "/05.-deployment/02.-elastic-inference.html"
+	}]

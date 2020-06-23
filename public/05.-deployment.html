@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<html lang="en" class="js csstransforms3d">
+<head>
+  <meta charset="utf-8">
+  <meta property="og:title" content="SageMaker Deep Dive" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="generator" content="Hugo 0.72.0" />
+  <meta name="description" content="SageMaker Deep Dive">
+<meta name="author" content="Roberto Bruno Martins">
+
+  <link rel="shortcut icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
+<link rel="icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
+
+  <title>Deployment :: SageMaker Deep Dive</title>
+
+  
+  <link href="./css/nucleus.css" rel="stylesheet">
+  <link href="./css/fontawesome-all.min.css" rel="stylesheet">
+  <link href="./css/hybrid.css" rel="stylesheet">
+  <link href="./css/featherlight.min.css" rel="stylesheet">
+  <link href="./css/perfect-scrollbar.min.css" rel="stylesheet">
+  <link href="./css/auto-complete.css" rel="stylesheet">
+  <link href="./css/atom-one-dark-reasonable.css" rel="stylesheet">
+  <link href="./css/theme.css" rel="stylesheet">
+  <link href="./css/hugo-theme.css" rel="stylesheet">
+  
+  <link href="./css/theme-aws.css" rel="stylesheet">
+  
+
+  <script src="./js/jquery-3.3.1.min.js"></script>
+
+  <style>
+    :root #header + #content > #left > #rlblock_left{
+        display:none !important;
+    }
+    
+      :not(pre) > code + span.copy-to-clipboard {
+          display: none;
+      }
+    
+  </style>
+  
+</head>
+
+<body class="" data-url="/05.-deployment.html">
+  <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <div>
+    <a href="./" title="Go home">
+        <img style="vertical-align:middle" src="./images/logo.png" height="70px" />
+    </a>
+</div>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="./js/lunr.min.js"></script>
+<script type="text/javascript" src="./js/auto-complete.js"></script>
+<script type="text/javascript">
+    
+        var baseurl = "";
+    
+</script>
+<script type="text/javascript" src="./js/search.js"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/01.-intro.html" title="Introduction to Distributed Training" class="dd-item 
+        
+        
+        
+        ">
+      <a href="./01.-intro.html">
+          Distributed Training Intro
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/01.-intro/01.-challenges.html" title="Challenges with scaling machine learning" class="dd-item ">
+        <a href="./01.-intro/01.-challenges.html">
+        Challenges with scaling machine learning
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/01.-intro/02.-addressing_challenges.html" title="Addressing scaling challenges - software dependencies" class="dd-item ">
+        <a href="./01.-intro/02.-addressing_challenges.html">
+        Addressing scaling challenges - software dependencies
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/01.-intro/03.-addressing_challenges-1.html" title="Addressing scaling challenges - Infrastructure management" class="dd-item ">
+        <a href="./01.-intro/03.-addressing_challenges-1.html">
+        Addressing scaling challenges - Infrastructure management
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/01.-intro/04.-horovod.html" title="Distributed training approaches" class="dd-item ">
+        <a href="./01.-intro/04.-horovod.html">
+        Distributed training approaches
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/02.-training.html" title="Distributed Training on SageMaker" class="dd-item 
+        
+        
+        
+        ">
+      <a href="./02.-training.html">
+          Distributed Training
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/02.-training/01.-setup.html" title="Training Setup" class="dd-item 
+        
+        
+        
+        ">
+      <a href="./02.-training/01.-setup.html">
+          Training Setup
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/02.-training/01.-setup/sm_jupyter_instance.html" title="Launch a SageMaker notebook instance" class="dd-item ">
+        <a href="./02.-training/01.-setup/sm_jupyter_instance.html">
+        Launch a SageMaker notebook instance
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/02.-training/01.-setup/download_workshop.html" title="Download the workshop content" class="dd-item ">
+        <a href="./02.-training/01.-setup/download_workshop.html">
+        Download the workshop content
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/02.-training/02.-single_instance_training.html" title="Prepare your training scripts" class="dd-item 
+        
+        
+        
+        ">
+      <a href="./02.-training/02.-single_instance_training.html">
+          Script preparation
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/02.-training/02.-single_instance_training/problem_setup.html" title="Problem statement" class="dd-item ">
+        <a href="./02.-training/02.-single_instance_training/problem_setup.html">
+        Problem statement
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/02.-training/02.-single_instance_training/prepare_dataset.html" title="Prepare training dataset" class="dd-item ">
+        <a href="./02.-training/02.-single_instance_training/prepare_dataset.html">
+        Prepare training dataset
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/02.-training/02.-single_instance_training/single_instance_script.html" title="Getting familiar with a single instance training script" class="dd-item ">
+        <a href="./02.-training/02.-single_instance_training/single_instance_script.html">
+        Single instance script
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/02.-training/02.-single_instance_training/distributed_training_script.html" title="Converting the script for Horovod API distributed training" class="dd-item ">
+        <a href="./02.-training/02.-single_instance_training/distributed_training_script.html">
+        Horovod distributed training prep
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/02.-training/03.-sagemaker_dist_training.html" title="Distributed Training with Amazon Sagemaker" class="dd-item 
+        
+        
+        
+        ">
+      <a href="./02.-training/03.-sagemaker_dist_training.html">
+          Distributed Training
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/02.-training/03.-sagemaker_dist_training/workflow.html" title="Workflow" class="dd-item ">
+        <a href="./02.-training/03.-sagemaker_dist_training/workflow.html">
+        Workflow
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/02.-training/03.-sagemaker_dist_training/training_scrip_updates.html" title="Updates required to run on SageMaker" class="dd-item ">
+        <a href="./02.-training/03.-sagemaker_dist_training/training_scrip_updates.html">
+        Updates required to run on SageMaker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/02.-training/03.-sagemaker_dist_training/sagemaker_training.html" title="SageMaker distributed training" class="dd-item ">
+        <a href="./02.-training/03.-sagemaker_dist_training/sagemaker_training.html">
+        SageMaker distributed training
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/02.-training/03.-sagemaker_dist_training/monitoring_results.html" title="Monitoring training progress" class="dd-item ">
+        <a href="./02.-training/03.-sagemaker_dist_training/monitoring_results.html">
+        Monitoring training progress
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/03.-other-training.html" title="Other Training Topics" class="dd-item 
+        
+        
+        
+        ">
+      <a href="./03.-other-training.html">
+          Other Training Topics
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/03.-other-training/01.-spot.html" title="Spot training lab" class="dd-item 
+        
+        
+        
+        ">
+      <a href="./03.-other-training/01.-spot.html">
+          Spot training
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/03.-other-training/02.-debugger.html" title="SageMaker Debugger lab" class="dd-item 
+        
+        
+        
+        ">
+      <a href="./03.-other-training/02.-debugger.html">
+          Debugger
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/03.-other-training/03.-experiments.html" title="SageMaker Experiments lab" class="dd-item 
+        
+        
+        
+        ">
+      <a href="./03.-other-training/03.-experiments.html">
+          Experiments
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/03.-other-training/04.-hpo.html" title="Automatic Model Tuning" class="dd-item 
+        
+        
+        
+        ">
+      <a href="./03.-other-training/04.-hpo.html">
+          HPO/Model Tuning
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/04.-ml-pipelines.html" title="Machine Learning Pipelines" class="dd-item 
+        
+        
+        
+        ">
+      <a href="./04.-ml-pipelines.html">
+          ML Pipelines
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/04.-ml-pipelines/01.-processing-jobs.html" title="Processing Jobs" class="dd-item 
+        
+        
+        
+        ">
+      <a href="./04.-ml-pipelines/01.-processing-jobs.html">
+          Processing Jobs
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/04.-ml-pipelines/01.-processing-jobs/01.-preprocess_spark.html" title="Processing with Spark" class="dd-item ">
+        <a href="./04.-ml-pipelines/01.-processing-jobs/01.-preprocess_spark.html">
+        Processing with Spark
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/04.-ml-pipelines/01.-processing-jobs/02.-preprocess_dask.html" title="Processing with Dask" class="dd-item ">
+        <a href="./04.-ml-pipelines/01.-processing-jobs/02.-preprocess_dask.html">
+        Processing with Dask
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/04.-ml-pipelines/02.-step-functions.html" title="Step Funcions and the DS SDK" class="dd-item 
+        
+        
+        
+        ">
+      <a href="./04.-ml-pipelines/02.-step-functions.html">
+          Step Functions
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/05.-deployment.html" title="Deployment" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="./05.-deployment.html">
+          Deployment
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/05.-deployment/01.-inference-pipelines.html" title="Inference Pipelines and Batch Transformations lab" class="dd-item 
+        
+        
+        
+        ">
+      <a href="./05.-deployment/01.-inference-pipelines.html">
+          Inference Pipelines
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/05.-deployment/02.-elastic-inference.html" title="Elastic Inference Lab" class="dd-item 
+        
+        
+        
+        ">
+      <a href="./05.-deployment/02.-elastic-inference.html">
+          Elastic Inference
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3></h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://twitter.com/bobbruno70"><i class='fab fa-twitter fa-lg'></i> @bobbruno70</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <left>
+
+    <h5 class="copyright">&copy; 2020 Amazon Web Services, Inc. or its Affiliates. All rights reserved.<h5>
+
+</left>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+  <section id="body">
+    <div id="overlay"></div>
+    <div class="padding highlightable">
+      
+      <div>
+        <div id="top-bar">
+          
+          
+          <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                <i class="fa fa-bars"></i>
+              </a>
+            </span>
+            
+            <span class="links">
+              
+          
+          
+          
+          
+          
+          
+          <a href='./'>SageMaker Deep Dive for Adidas</a> > Deployment
+          
+          
+          
+          
+            </span>
+          </div>
+          
+        </div>
+      </div>
+      
+
+      
+      <div id="chapter">
+        
+        <div id="body-inner">
+          <h1>Deployment</h1>
+          
+          
+
+
+
+	<p>In this section, we&rsquo;ll go over some features for deployment of SageMaker ML models in a cost-effective manner. We&rsquo;ll use Inference Pipelines to chain several models together and apply a Batch Transformation to generate inference over a bulk of data. We&rsquo;ll deploy an endpoint using Elastic Inference to reduce costs and optimize resource usage without needing to change any code.</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+            </div> 
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="./04.-ml-pipelines/02.-step-functions.html" title="Step Funcions and the DS SDK"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="./05.-deployment/01.-inference-pipelines.html" title="Inference Pipelines and Batch Transformations lab" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="./js/clipboard.min.js"></script>
+    <script src="./js/perfect-scrollbar.min.js"></script>
+    <script src="./js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="./js/jquery.sticky.js"></script>
+    <script src="./js/featherlight.min.js"></script>
+    <script src="./js/html5shiv-printshiv.min.js"></script>
+    <script src="./js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="./js/modernizr.custom-3.6.0.js"></script>
+    <script src="./js/learn.js"></script>
+    <script src="./js/hugo-learn.js"></script>
+
+    <link href="./mermaid/mermaid.css" rel="stylesheet" />
+    <script src="./mermaid/mermaid.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <div id = 'kinesisStreamName' title = ""/></div>
+<div id = 'cognitoPoolId' title = ""/></div>
+<div id = 'awsRegion' title = ""/></div>
+<div id = 'contentId' title = ""/></div>
+<div id = 'language' title = "en"/></div>
+<div id = 'versions' title = ""/></div>
+
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
+<script src="./js/kinesis.js"></script>
+  </body>
+</html>
