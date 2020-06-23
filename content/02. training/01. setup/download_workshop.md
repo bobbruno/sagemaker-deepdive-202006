@@ -10,20 +10,15 @@ weight: 20
 * Click *File > New >  Terminal* to launch terminal in your JupyterLab instance.
 ![Launch terminal](/images/setup/launch_terminal.png)
 
+{{% attachments %}}
+
 * Download the workshop code and notebooks. Enter bash (optional), change directory to ~/SageMaker, clone the repository
 ```bash
-bash
 cd ~/SageMaker
-git clone https://github.com/bobbruno/sagemaker-workshop-202006.git
+wget distributed_labs.zip
+unzip distributed_labs.zip
 ```
-{{% notice warning %}}
-Fix the link above to a repo of my creation
-{{% /notice %}}
-
 * Confirm that you're able to see the contents. Should see 3 parts
 ```
-ls distributed-training-workshop/notebooks
+ls distributed_labs
 ```
-{{% notice warning %}}
-Fix the description above after fixing the link.
-{{% /notice %}}

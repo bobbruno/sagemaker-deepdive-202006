@@ -26,5 +26,5 @@ Welcome to the SageMaker Deep Dive. We'll have a lot to cover, but don't worry. 
 
 ## Getting Access to the Training Environment
 
-- Plase open the attached spreadsheet and find the login URL assigned to your name. Click on it and follow the instructions online.
+- Plase open the attached spreadsheet below and find the login URL assigned to your name. Click on it and follow the instructions online.
 {{% attachments title="Accounts" pattern=".*(pdf)" %}}
