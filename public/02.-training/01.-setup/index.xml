@@ -26,8 +26,7 @@
       <pubDate>Mon, 28 Oct 2019 00:14:06 -0700</pubDate>
       
       <guid>/02.-training/01.-setup/download_workshop.html</guid>
-      <description>Launch JupyterLab client and clone the workshop repository  Your notebook instance should now be ready. Click JupyterLab to launch your client.  Click File &amp;gt; New &amp;gt; Terminal to launch terminal in your JupyterLab instance.  Download the workshop code and notebooks. Enter bash (optional), change directory to ~/SageMaker, clone the repository
-bash cd ~/SageMaker git clone https://github.com/bobbruno/sagemaker-workshop-202006.git Fix the link above to a repo of my creation</description>
+      <description>Launch JupyterLab client and clone the workshop repository  Your notebook instance should now be ready. Click JupyterLab to launch your client.  Click File &amp;gt; New &amp;gt; Terminal to launch terminal in your JupyterLab instance.  Download the workshop code and notebook. Change directory to ~/SageMaker, download and unzip the labs file. If the wget command doesn&amp;rsquo;t work, try copying the link above and using it as the wget parameter.</description>
     </item>
     
   </channel>

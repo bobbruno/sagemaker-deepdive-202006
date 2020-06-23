@@ -10,12 +10,10 @@ weight: 20
 * Click *File > New >  Terminal* to launch terminal in your JupyterLab instance.
 ![Launch terminal](/images/setup/launch_terminal.png)
 
-{{% attachments %}}
-
-* Download the workshop code and notebooks. Change directory to ~/SageMaker, download and unzip the labs file. If the `wget` command doesn't work, try copying the link above and using it as the `wget` parameter.
+* Download the [workshop code and notebook](/files/distributed_labs.zip). Change directory to ~/SageMaker, download and unzip the labs file. If the `wget` command doesn't work, try copying the link above and using it as the `wget` parameter.
 ```bash
 cd ~/SageMaker
-wget https://master.dmbqjbidi9r7o.amplifyapp.com/02.%20training/01.%20setup/download_workshop.files/distributed_labs.zip
+wget https://master.dmbqjbidi9r7o.amplifyapp.com/files/distributed_labs.zip
 unzip distributed_labs.zip
 ```
 * Confirm that you're able to see the contents. Should see 3 parts

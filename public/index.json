@@ -133,4 +133,8 @@
 	{
 		"pageTitle": "Elastic Inference Lab",
 		"relativePagePath": "/05.-deployment/02.-elastic-inference.html"
+	},
+	{
+		"pageTitle": "Thank you!",
+		"relativePagePath": "/06.-thank-you.html"
 	}]
