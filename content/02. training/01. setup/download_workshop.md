@@ -12,10 +12,10 @@ weight: 20
 
 {{% attachments %}}
 
-* Download the workshop code and notebooks. Enter bash (optional), change directory to ~/SageMaker, clone the repository
+* Download the workshop code and notebooks. Change directory to ~/SageMaker, download and unzip the labs file. If the `wget` command doesn't work, try copying the link above and using it as the `wget` parameter.
 ```bash
 cd ~/SageMaker
-wget distributed_labs.zip
+wget https://master.dmbqjbidi9r7o.amplifyapp.com/02.%20training/01.%20setup/download_workshop.files/distributed_labs.zip
 unzip distributed_labs.zip
 ```
 * Confirm that you're able to see the contents. Should see 3 parts
