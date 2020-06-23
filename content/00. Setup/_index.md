@@ -27,3 +27,7 @@ Welcome to the SageMaker Deep Dive. We'll have a lot to cover, but don't worry. 
 ## Getting Access to the Training Environment
 
 - Plase open the [accounts table](/files/accounts.pdf) below and find the login URL assigned to your name. Click on it and follow the login instructions online.
+
+{{% notice note %}}
+If you can't find your name, notify the instructor. We can create new accounts if needed.
+{{% /notice %}}

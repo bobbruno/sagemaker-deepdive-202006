@@ -50,3 +50,9 @@ name = "<i class='fab fa-twitter fa-lg'></i> @bobbruno70"
 identifier = "tw"
 url = "https://twitter.com/bobbruno70"
 weight = 1
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-envelope'></i> zrmar@amazon.de"
+url = "mailto:zrmar@amazon.de"
+weight = 1
+
