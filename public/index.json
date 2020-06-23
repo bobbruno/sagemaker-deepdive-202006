@@ -3,6 +3,10 @@
 		"relativePagePath": "/en/"
 	},
 	{
+		"pageTitle": "SageMaker Deep Dive",
+		"relativePagePath": "/00.-setup.html"
+	},
+	{
 		"pageTitle": "Introduction to Distributed Training",
 		"relativePagePath": "/01.-intro.html"
 	},
@@ -79,7 +83,7 @@
 		"relativePagePath": "/02.-training/03.-sagemaker_dist_training/monitoring_results.html"
 	},
 	{
-		"pageTitle": "Other Training Topics",
+		"pageTitle": "Other Training Features in SageMaker",
 		"relativePagePath": "/03.-other-training.html"
 	},
 	{

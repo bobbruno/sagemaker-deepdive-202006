@@ -1,6 +1,6 @@
 +++
-title = "Other Training Topics"
-menuTitle = "Other Training Topics"
+title = "Other Training Features in SageMaker"
+menuTitle = "Other Training Features"
 weight = 30
 chapter = true
 #pre = "<b>0. </b>"
